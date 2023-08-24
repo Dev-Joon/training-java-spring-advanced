@@ -14,4 +14,9 @@ public class OrderControllerV0 {
         orderService.orderItem(itemId);
         return "ok";
     }
+
+    @GetMapping("/v0/test")
+    public String test(){
+        return "hello test";
+    }
 }
